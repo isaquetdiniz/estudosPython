@@ -4,4 +4,4 @@
 
 ## Pastas
 
-- jogos
+- [Jogos](https://github.com/isaquetdiniz/estudosPython/tree/main/jogos): Alura Curso Python 3

@@ -37,14 +37,20 @@ def question3():
 
 def question4():
     newWord = [];
+    continueEncrypt = True;
 
-    letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
-    numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
+    letters = ['abcdefghijklmnopqrstuvxwyz']
+    numbers = ['123456789'];
 
     inputedWord = str(input('Palavra: '));
 
-    newWord = [str(ord(chr)+3) for chr in inputedWord]
-    print(''.join(newWord));
+    def encrypt(chr):
+        position = letters.find(chr) + 3;
+        if position >= len(letters):
+            position -= len(letters);
+
+
+    newWord = [encrypt(chr) for chr in inputedWord if chr in letters]
 
 question4()
 

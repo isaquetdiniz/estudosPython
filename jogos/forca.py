@@ -24,7 +24,7 @@ def jogar():
         enforcou = erros == 7;
         acertou = '_' not in letras_acertadas;
         print(letras_acertadas);
-        
+
     if(acertou):
         imprime_mensagem_vencedor();
     else:
